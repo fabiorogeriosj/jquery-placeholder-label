@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin jQuery - Placeholder Label</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+		.top {
+			width: 100%;
+			background-color: #F05858;
+			color: #fff;
+		}
+		.content {
+			max-width: 900px;
+			margin: 0 auto;
+		}
+		.top .content {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			font-weight: 300;
+			font-size: 30px;
+		}
+		.top .content .compatibility {
+			float: right;
+			text-align: center;
+			margin-top: -70px;
+		}
+		.compatibility .text {
+			font-size: 15px;
+			margin: 10px;
+		}
+		h1 {
+			margin-top: 20px;
+			font-weight: 800;
+			color: #4E4E4E;
+		}
+		h2 {
+			font-size: 18px;
+			font-weight: 800;
+			color: #4E4E4E;
+		}
+		form {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		input {
+			border: 1px solid #ccc;
+			padding: 10px;
+			outline: none;
+			font-size: 14px;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+			width: 28%;
+			margin: 10px;
+		}
+		.clr {
+			clear: both;
+		}
+		code, samp, kbd {
+			font-family: "Courier New", Courier, monospace, sans-serif;
+			text-align: left;
+			color: #555;
+		}
+		pre code {
+			line-height: 1.6em;
+			font-size: 11px;
+		}
+		pre {
+			padding: 0.1em 0.5em 0.3em 0.7em;
+			border-left: 11px solid #ccc;
+			margin: 1.7em 0 1.7em 0.3em;
+			overflow: auto;
+			width: 93%;
+			text-align: left;
+			font-size: 20px;
+			background-color: #4E4E4E;
+			color: #fff;
+		}
+		/* target IE7 and IE6 */
+		*:first-child+html pre {
+			padding-bottom: 2em;
+			overflow-y: hidden;
+			overflow: visible;
+			overflow-x: auto; 
+		}
+		* html pre { 
+			padding-bottom: 2em;
+			overflow: visible;
+			overflow-x: auto;
+		}
+		img.author {
+			border-radius: 50%;
+			border: 3px solid #ffffff;
+			-webkit-box-shadow: 0 0 4px 1px #BDBDBD;
+			box-shadow: 0 0 4px 1px #BDBDBD;
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 20px;
+		}
+		.compatibility .nagegator {
+			font-size: 11px;
+			float: left;
+			margin: 5px;
+		}
+		.subtitle {
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="content">
+			<div class="title">jQuery Placeholder Label</div>
+			<div class="subtitle">a simple plugin placeholder attached with label</div>
+			<div class="compatibility">
+				<div class="text">Compatibility browsers:</div>
+				<div class="comp">
+					<div class="nagegator">
+						<img src="chrome.png">
+						<br>
+						8+
+					</div>
+					<div class="nagegator">
+						<img src="firefox.png">
+						<br>
+						2.0+
+					</div>
+					<div class="nagegator">
+						<img src="ie.png">
+						<br>
+						6+
+					</div>
+					<div class="nagegator">
+						<img src="safari.png">
+						<br>
+						5.1+
+					</div>
+					<div class="nagegator">
+						<img src="opera.png">
+						<br>
+						12.1+
+					</div>
+					<div class="nagegator">
+						<img src="ios.png">
+						<br>
+						6.0+
+					</div>
+					<div class="nagegator">
+						<img src="android.png">
+						<br>
+						4.0+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="body">
+		<div class="content">
+			<h1>Example</h1>
+			<form>
+				<input type="text" placeholder="Enter your name" alt="Name">
+				<input type="text" placeholder="Enter your email" alt="E-mail">
+				<input type="password" placeholder="Enter your password" alt="Password">
+			</form>
+			<div class="clr"></div>
+			<h1>Using</h1>
+<pre>
+$(document).ready(function (){
+	$('input[placeholder]').placeholderLabel();
+});
+</pre>
+			<div class="clr"></div>
+			<h1>Doc</h1>
+<pre>
+$('input[placeholder]').placeholderLabel({
+    placeholderColor: "#898989", // Color placeholder
+    labelColor: "#4AA2CC", // Color label (after the focus)
+    labelSize: "14px" // Size of label (after the focus)
+    useBorderColor: true, // If true a border input is altered after focus
+    inInput: true, // If true the label is actually in half vertically
+    timeMove: 200 // Time effect move after focus
+});
+</pre>
+		<div class="clr"></div>
+			<h1>Download</h1>
+			<a href="https://github.com/fabiorogeriosj/jquery-placeholder-label">https://github.com/fabiorogeriosj/jquery-placeholder-label</a>
+			<h1>Author</h1>
+			<img class="author" src="https://pbs.twimg.com/profile_images/412951639423586306/l01TdJGH.png" width="100px">
+			<p><h2>Fábio Rogério SJ</h2></p>
+			<p>GitHub: <a href="https://github.com/fabiorogeriosj">https://github.com/fabiorogeriosj</a></p>
+			<p>Twitter: <a href="https://twitter.com/fabiorogeriosj">https://twitter.com/fabiorogeriosj</a></p>
+			<p>Site: <a href="http://fabiorogeriosj.com.br">http://fabiorogeriosj.com.br</a></p>
+
+		</div>
+	</div>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../src/jquery.placeholder.label.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function (){
+			$('input[placeholder]').placeholderLabel();
+		})
+	</script>
+</body>
+</html>
