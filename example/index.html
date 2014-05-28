@@ -165,9 +165,9 @@
 		<div class="content">
 			<h1>Example</h1>
 			<form>
-				<input type="text" placeholder="Enter your name" alt="Name">
-				<input type="text" placeholder="Enter your email" alt="E-mail">
-				<input type="password" placeholder="Enter your password" alt="Password">
+				<input id="name" type="text" placeholder="Enter your name" alt="Name" value="Fábio Rogério SJ">
+				<input id="email" type="text" placeholder="Enter your email" alt="E-mail">
+				<input id="password" type="password" placeholder="Enter your password" alt="Password">
 			</form>
 			<div class="clr"></div>
 			<h1>Using</h1>
@@ -187,6 +187,10 @@ $('input[placeholder]').placeholderLabel({
     inInput: true, // If true the label is actually in half vertically
     timeMove: 200 // Time effect move after focus
 });
+</pre>
+		<p>If the value is atribuito after loading, you will need to call the method:</p>
+<pre>
+$('#email').val("fabio@fabio.com").placeholderLabel();
 </pre>
 		<div class="clr"></div>
 			<h1>Download</h1>
