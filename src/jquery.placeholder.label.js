@@ -6,6 +6,7 @@
             placeholderColor: "#898989",
             labelColor: "#4AA2CC",
             labelSize: this.css('font-size'),
+            fontStyle: "normal",
             useBorderColor: true,
             inInput: true,
             timeMove: 200
@@ -38,6 +39,7 @@
                 var label = $('<label></label>');
                 label.css('position','absolute');
                 label.css('cursor','initial');
+                label.css('font-style',settings.fontStyle);
                 label.css('color',settings.placeholderColor);
                 label.css('font-size',currentPlaceholderSize);
 
